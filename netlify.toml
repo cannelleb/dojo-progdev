@@ -2,3 +2,7 @@
   functions = "functions-build/"
   publish = "build/"
   command = "npm run build"
+
+[build.environment]
+  # React 16.12 has no react/jsx-runtime; keep the classic JSX transform
+  DISABLE_NEW_JSX_TRANSFORM = "true"
